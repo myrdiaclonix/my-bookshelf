@@ -1,14 +1,14 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function OJogador() {
   return (
-    <div className="flex flex-col md:flex-row items-start gap-4 my-8 px-4">
-      <div className="inline-block animated-img origin-center -z-10 flex-shrink-0">
+    <div className="flex flex-col md:flex-row items-start gap-4 my-8 px-4 text-center">
+      <div className="animated-img origin-center -z-10 flex-shrink-0 mx-auto">
         <Image
           src="/books/ojogador.webp"
           width={339}
           height={462}
-          alt="Imgem de O Jogador"
+          alt="Imagem de O Jogador"
         />
       </div>
       <div className="leading-relaxed text-shadow-blue-md/90 p-6 my-description text-xl text-center my-auto">

@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Lora } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Image from "next/image";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -23,15 +19,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${lora.className} antialiased m-4`}>
+      <body className={`${lora.className} antialiased m-4 overflow-x-hidden`}>
         {children}
-        <div className="text-center">
-          <audio controls preload="auto" className="inline-block">
-            <source src="/audio/Loyalty Freak Music - Chill For Real.mp3" type="audio/mpeg" />
-          Infelizmente seu navegador não consegue tocar músicas.
-          </audio>
-        </div>
         <p className="text-center opacity-50">Escrito por myrdiaclonix</p>
+        <div className="flex flex-wrap">
+          <a href="https://estanteanimada.vercel.app">
+            <Image
+              src="/badge.png"
+              width="88"
+              height="31"
+              alt="Visite meu site!"
+            />
+          </a>
+        </div>
       </body>
     </html>
   );
