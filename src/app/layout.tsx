@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Jacquard_12, Jersey_10, Lora, Texturina } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
 
-const lora = Lora({
+const texturina = Texturina({
   subsets: ["latin"],
 });
 
@@ -19,19 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${lora.className} antialiased m-4 overflow-x-hidden`}>
+      <body className={`${texturina.className} p-4 overflow-x-hidden bg-cyan-50`}>
         {children}
-        <p className="text-center opacity-50">Escrito por myrdiaclonix</p>
-        <div className="flex flex-wrap">
-          <a href="https://estanteanimada.vercel.app">
-            <Image
-              src="/badge.png"
-              width="88"
-              height="31"
-              alt="Visite meu site!"
-            />
-          </a>
-        </div>
       </body>
     </html>
   );

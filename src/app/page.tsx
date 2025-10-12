@@ -1,5 +1,7 @@
+import Badge from "@/components/Badge";
 import OJogador from "@/components/books/20251009";
 import Ganbatte from "@/components/books/20251011";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +16,14 @@ export default function Home() {
       </div>
       <OJogador />
       <Ganbatte />
+      
+      <Badge />
+      <div className="flex gap-1 pt-4">
+        <a href="https://loyaltyfreakmusic.com/">
+          <img src="https://loyaltyfreakmusic.com/wp-content/uploads/2024/12/LFM_bouton.gif" width="88" height="31" alt="Loyalty Freak Music website, Public Domain Creative Commons 0 licensed music" />
+        </a>
+      </div>
+      <p className="pt-4">Escrito por myrdiaclonix</p>
     </div>
   );
 }

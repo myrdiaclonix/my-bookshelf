@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #fff;
-  --foreground: #171717;
-}
-
-body {
-  background: #f0f8ff;
-  color: #000633;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .animated-img {
   display: inline-block;
   transform-origin: center center;
